@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dc6a00;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5;
+    margin-bottom: 20px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-side h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+/* ... (previous styles) ... */
+
+.login-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    
+    padding: 10px 90px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 90px; /* Increase the width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Make it a block element */
+}
+
+.login-form button:hover {
+    background-color: #258cd1;
+}
+
+/* ... (remaining styles) ... */
+
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.main__btn{
+    font-size: 1.2rem;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right,#fcb045,#fd1d1d,#833ab4);
+    background: linear-gradient(to right,#fcb045,#fd1d1d,#833ab4);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover{
+    color: #fff;
+}
+
+.main__btn:hover:after{
+    width: 100%;
+}
